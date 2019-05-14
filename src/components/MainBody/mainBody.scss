@@ -1,0 +1,369 @@
+.body {
+    height: auto;
+
+    .body-information {
+        color: black;
+        height: auto;
+
+        .container {
+            padding: 5% 0;
+
+            .body-information-names {
+                display: block;
+                text-align: center;
+
+                .font-style-header {
+                    margin: 20px 0 0 0;
+                }
+
+                p.job {
+                    font-weight: 400;
+                    font-size: 10px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: rgb(160, 158, 158);
+                    margin: 12px 0 0 0;
+                }
+            }
+
+            .body-information-description {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 70px 0 0 0;
+
+                .o-mnie {
+                    margin: 0 20px;
+                    width: auto;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+
+                    .o-mnie-zdjecie {
+                        width: auto;
+
+                        img {
+                            margin: 15px;
+                            width: 350px;
+                            height: 350px;
+                            filter: grayscale(100%);
+                            transition: 0.5s all;
+
+                            &:hover {
+                                filter: grayscale(0%);
+                            } 
+                        }
+                    }
+
+                    .o-mnie-opis {
+                        margin: 15px;
+                        width: auto;
+
+                        .font-style-text {
+                            margin: 20px 0;
+                            width: 350px;
+                        }
+                    }
+
+                    @media(max-width: 800px) {
+                        .o-mnie-zdjecie {
+                            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        .o-mnie-opis {
+    
+                            .font-style-text {
+                                margin: 20px auto;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .umiejetnosci {
+                    margin: 15px 70px;
+                    width: 350px;
+                    z-index: -1;
+
+                    .umiejetnosci-skill {
+
+                        .font-style-text {
+                            margin: 20px 0 2px 0;
+                        }
+
+                        .umiejetnosci-skill-bar {
+                            .bar-1 {
+                                span {
+                                    background-color: #EF6026;
+                                    width: 30%;
+                                }
+                            }
+
+                            .bar-2 {
+                                span {
+                                    background-color: #2FA1E1;
+                                    width: 60%;
+                                }
+                            }
+
+                            .bar-3 {
+                                span {
+                                    background-color: #FCE421;
+                                    width: 50%;
+                                }
+                            }
+
+                            .bar-4 {
+                                span {
+                                    background-color: #367BEA;
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .body-awards {
+        height: auto;
+        background-color: rgb(245, 245, 245);
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .body-awards-content {
+                margin: 0 20px;
+                padding: 8% 3%;
+                text-align: center;
+            width: auto;
+
+
+                i {
+                    font-size: 50px;
+                }
+
+                .font-style-header {
+                    margin: 15px 0 0 0;
+                    letter-spacing: 0;
+                }
+
+                .font-style-title {
+                    margin: 15px 0 0 0;
+                }
+            }
+        }
+    }
+
+    .body-portfolio {
+        height: auto;
+
+        .container {
+
+            .body-portfolio-title {
+                text-align: center;
+                padding: 6% 0 6%;
+            }
+
+            .body-portfolio-items {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0 0 1% 0;
+
+                img {
+                    width: 20%;
+                    min-width: 300px;
+                    height: 100%;
+                    margin: 0 1% 2%;
+                }
+            }
+
+            @media(max-width: 1024px) {
+                .body-portfolio-items {
+                    margin: 0 auto;
+    
+                    img {
+                        width: 48%;
+                    }
+                }   
+            }
+
+            @media(max-width: 680px) {
+                .body-portfolio-items {
+                    margin: 0 auto;
+    
+                    img {
+                        width: 100%;
+                    }
+                }   
+            }
+        }
+    }
+
+    .body-skills {
+        height: auto;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5% 0;
+            max-width: 1450px;
+
+
+            .body-skills-item {
+                width: 22%;
+                min-width: 300px;
+                margin: 2% 2% 1%;
+
+                i {
+                    font-size: 50px;
+                    margin: 0 0 20px;
+                }
+
+                .font-style-title {
+                    margin: 15px 0;
+                }
+            }
+            
+            @media(max-width: 1024px) {
+                .body-skills-item {
+                    width: 45%;
+                    margin: 2%;
+                }
+            }
+
+            @media(max-width: 680px) {
+                .body-skills-item {
+                    width: 100%;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+
+    .body-partnes {
+        height: auto;
+        background-color: #2D518F;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5% 0;
+            max-width: 1450px;
+
+            .body-partners-item {
+                text-align: center;
+                width: 15%;
+                min-width: 160px;
+                margin: 4% 2%;
+
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    .body-posts {
+        height: auto;
+        background-color: rgb(245, 245, 245);
+        padding: 0 5%;
+
+        .container {
+            text-align: center;
+            padding: 0 2%;
+            max-width: 1450px;
+
+            .body-posts-items {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0 auto;
+
+                .body-posts-item {
+                    width: 20%;
+                    min-width: 300px;
+                    margin: -70px 1% 70px;
+                    background-color: white;
+
+                    .body-posts-item-top {
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .font-style-title {
+                            color: white;
+                            letter-spacing: 1px;
+                            font-size: 8px;
+                            font-weight: 400;
+                            margin: -280px 0 0 0;
+                            
+
+                            .title-1 {
+                                margin: 0 -195px 0 0;
+                                display: inline;
+                                padding: 7px;
+                                background-color: red;
+                            }
+
+                            .title-2 {
+                                margin: 0 -195px 0 0;
+                                display: inline;
+                                padding: 7px;
+                                background-color: orange;
+                            }
+
+                            .title-3 {
+                                margin: 0 -195px 0 0;
+                                display: inline;
+                                padding: 7px;
+                                background-color: green;
+                            }
+                        }
+                    }
+
+                    .body-posts-item-middle {
+                        margin: 280px 0 0 0;
+                        padding: 10% 15%;
+                        text-align: left;
+
+                        .font-style-text {
+                            margin: 12px 0;
+                        }
+                    }
+
+                    .body-posts-item-bottom {
+                        padding: 10px;
+                        border-top: 2px solid rgb(245, 245, 245);
+                        padding: 5% 15%;
+
+                        b {
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            button {
+                width: auto;
+                padding: 20px 30px;
+                margin: 0 0 2% 0;
+            }
+        }
+    }
+}
