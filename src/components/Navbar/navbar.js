@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.scss';
 
-export default class Navbar extends React.Component {
+class Navbar extends Component {
     state = {
         color: 'white',
         background: 'none',
@@ -24,7 +24,7 @@ export default class Navbar extends React.Component {
 
     render() {
         return (
-            <div className="navbar">
+            <div className="navbar" id="homepage">
                 <div className="navbar-background ">
                     <div className="navbar-body">
                         <div className="navbar-top" style={{ background: this.state.background, height: this.state.height }}>
@@ -33,14 +33,14 @@ export default class Navbar extends React.Component {
                             </div>
                             <div className="navbar-links">
                                 <ul>
-                                    <li ><Link to="/"><div style={{ color: this.state.color }}>Home</div></Link></li>
+                                    <li ><a href="#homepage"><span style={{ color: this.state.color }}>Home</span></a></li>
                                     <li><a href="#about"><span style={{ color: this.state.color }}>O mnie</span></a></li>
-                                    <li><Link to="/"><div style={{ color: this.state.color }}>Statystyki</div></Link></li>
-                                    <li><Link to="/"><div style={{ color: this.state.color }}>Portfolio</div></Link></li>
-                                    <li><Link to="/"><div style={{ color: this.state.color }}>Informacje</div></Link></li>
-                                    <li><Link to="/"><div style={{ color: this.state.color }}>Pracowałem dla</div></Link></li>
-                                    <li><Link to="/"><div style={{ color: this.state.color }}>Blog</div></Link></li>
-                                    <li><Link to="/"><div style={{ color: this.state.color }}>Kontakt</div></Link></li>
+                                    <li><a href="#awards"><span style={{ color: this.state.color }}>Statystyki</span></a></li>
+                                    <li><a href="#portfolio"><span style={{ color: this.state.color }}>Portfolio</span></a></li>
+                                    <li><a href="#skils"><span style={{ color: this.state.color }}>Informacje</span></a></li>
+                                    <li><a href="#partners"><span style={{ color: this.state.color }}>Pracowałem dla</span></a></li>
+                                    <li><a href="#posts"><span style={{ color: this.state.color }}>Blog</span></a></li>
+                                    <li><a href="#contact"><span style={{ color: this.state.color }}>Kontakt</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -60,3 +60,6 @@ export default class Navbar extends React.Component {
         )
     }
 }
+
+export default Navbar;
+

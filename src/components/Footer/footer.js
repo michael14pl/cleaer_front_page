@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-top">
-                <div className="container">
+                <div className="container" id="contact">
                     <div className="footer-top-title">
                         <div className="font-style-header">
                             napisz do mnie

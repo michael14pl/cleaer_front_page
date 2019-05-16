@@ -11,13 +11,13 @@ const Body = () => {
     return (
         <div className="body">
             <div className="body-information">
-                <div className="container">
+                <div className="container" id="about">
                     <div className="body-information-names">
                         <div className="font-style-header">Michał Kawa</div>
                         <p className="job">front-end developer</p>
                     </div>
                     <div className="body-information-description">
-                        <div className="o-mnie" id="about">
+                        <div className="o-mnie">
                             <div className="o-mnie-zdjecie">
                                 <img src={profilowe} alt="zdjecie Michała Kawy" />
                             </div>
@@ -68,7 +68,7 @@ const Body = () => {
                     </div>
                 </div>
             </div>
-            <div className="body-awards">
+            <div className="body-awards" id="awards">
                 <div className="container">
                     <div className="body-awards-content">
                         <i className="fab fa-android"></i>
@@ -93,7 +93,7 @@ const Body = () => {
                 </div>
             </div>
 
-            <div className="body-portfolio">
+            <div className="body-portfolio" id="portfolio">
                 <div className="container">
                     <div className="body-portfolio-title">
                         <div className="font-style-header">portofolio</div>
@@ -111,7 +111,7 @@ const Body = () => {
                 </div>
             </div>
 
-            <div className="body-skills">
+            <div className="body-skills" id="skils">
                 <div className="container">
                     <div className="body-skills-item">
                         <i className="fab fa-android"></i>
@@ -164,7 +164,7 @@ const Body = () => {
                 </div>
             </div>
 
-            <div className="body-partnes">
+            <div className="body-partnes" id="partners">
                 <div className="container">
                     <div className="body-partners-item">
                         <img src={google} alt="google" />
@@ -181,7 +181,7 @@ const Body = () => {
                 </div>
             </div>
 
-            <div className="body-posts">
+            <div className="body-posts" id="posts">
                 <div className="container">
                     <div className="body-posts-items">
                         <div className="body-posts-item">
