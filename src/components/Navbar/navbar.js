@@ -4,17 +4,17 @@ import './navbar.scss';
 
 class Navbar extends Component {
     state = {
-        color: 'white',
         background: 'none',
         height: 'auto',
+        transition: '',
     }
 
     listenScrollEvent = () => {
         if (window.scrollY > 1) {
-            this.setState({ color: 'black', background: '#E0412C', heigth: 'auto' })
+            this.setState({ background: '#35353B', heigth: 'auto', transition: '0.3s all' })
 
         } else {
-            this.setState({ color: 'white', background: 'none' })
+            this.setState({ background: 'none', transition: '0.3s all' })
         }
     }
 
@@ -27,19 +27,17 @@ class Navbar extends Component {
             <div className="navbar" id="homepage">
                 <div className="navbar-background ">
                     <div className="navbar-body">
-                        <div className="navbar-top" style={{ background: this.state.background, height: this.state.height }}>
-                            <div className="navbar-sign">
-                                <p style={{ color: this.state.color }}>K</p>
-                            </div>
+                        <div className="navbar-top" style={{ background: this.state.background, height: this.state.height, transition: this.state.transition }}>
                             <div className="navbar-links">
+                                <label for="menu-toggle">☰</label>
+                                <input type="checkbox" id="menu-toggle"></input>
                                 <ul>
                                     <li ><a href="#homepage"><span style={{ color: this.state.color }}>Home</span></a></li>
                                     <li><a href="#about"><span style={{ color: this.state.color }}>O mnie</span></a></li>
-                                    <li><a href="#awards"><span style={{ color: this.state.color }}>Statystyki</span></a></li>
+                                    <li><a href="#awards"><span style={{ color: this.state.color }}>Doświadczenie</span></a></li>
                                     <li><a href="#portfolio"><span style={{ color: this.state.color }}>Portfolio</span></a></li>
-                                    <li><a href="#skils"><span style={{ color: this.state.color }}>Informacje</span></a></li>
-                                    <li><a href="#partners"><span style={{ color: this.state.color }}>Pracowałem dla</span></a></li>
-                                    <li><a href="#posts"><span style={{ color: this.state.color }}>Blog</span></a></li>
+                                    <li><a href="#partners"><span style={{ color: this.state.color }}>Współpraca</span></a></li>
+                                    <li><a href="#posts"><span style={{ color: this.state.color }}>Pasje</span></a></li>
                                     <li><a href="#contact"><span style={{ color: this.state.color }}>Kontakt</span></a></li>
                                 </ul>
                             </div>
@@ -52,7 +50,6 @@ class Navbar extends Component {
                             <div className="navbar-center-description">
                                 <p>front-end developer</p>
                             </div>
-                            <button>Pobierz moje CV</button>
                         </div>
                     </div>
                 </div>
